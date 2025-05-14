@@ -33,7 +33,8 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
 
-    "users"
+    "users",
+    "rest_framework",
 ]
 
 # Список промежуточного ПО, которое обрабатывает входящие запросы и выходящие ответы.
@@ -130,3 +131,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 # Определяет тип поля по умолчанию для первичных ключей всех приложений
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+# Стандартная модель пользователя
+AUTH_USER_MODEL = "users.User"
